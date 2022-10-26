@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Men\xFA.unity"
+    guid: 982d46d175a7c1545bcbff58da540c37
+  - enabled: 1
+    path: Assets/Scenes/PruebasUnity.unity
+    guid: fd916dab19e3e32419743af1d4996e1f
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: c861ea498c60fd4498a4c806a891b0de
   m_configObjects: {}

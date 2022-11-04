@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     public int MaxHealth;
     private int currentHealth;
@@ -16,24 +16,31 @@ public class PlayerHealth : MonoBehaviour
     {
         InitialPosition = transform.position;
         currentHealth = MaxHealth;
-        healthText.text = currentHealth.ToString();
+        if (healthText != null)
+        {
+            healthText.text = currentHealth.ToString();
+        }
     }
 
     public void TakeDamage(int damageTaken)
     {
         currentHealth -= damageTaken;
-        healthText.text = currentHealth.ToString();
+        if (healthText != null)
+        {
+            healthText.text = currentHealth.ToString();
+        }
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Estoy muerto");
-            transform.position = InitialPosition;
-            currentHealth = MaxHealth;
-            healthText.text = currentHealth.ToString();
+            Die();
         }
         else
         {
             Debug.Log("He recibido daño, me quedan " + currentHealth + " puntos de vida.");
         }
+    }
+
+    public virtual void Die()
+    {
     }
 }

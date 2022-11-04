@@ -19,6 +19,19 @@ public class PlayerTrigger : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(playertag))
+        {
+            //other.transform.position = posicionObjetivo.position;
+            OnPlayerEnter(collision.gameObject);
+        }
+    }
+
+    public virtual void OnPlayerEnter(GameObject playerObject)
+    {
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag(playertag))
@@ -40,10 +53,6 @@ public class PlayerTrigger : MonoBehaviour
     }
 
     public virtual void OnPlayerExit(GameObject playerObject)
-    {
-    }
-
-    public virtual void OnPlayerEnter(GameObject playerObject)
     {
     }
 

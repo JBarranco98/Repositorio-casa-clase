@@ -471,6 +471,7 @@ GameObject:
   - component: {fileID: 114762042097486276}
   - component: {fileID: 1863745679}
   - component: {fileID: 1863745680}
+  - component: {fileID: 352121746}
   m_Layer: 6
   m_Name: First Person Controller
   m_TagString: Player
@@ -590,6 +591,7 @@ MonoBehaviour:
   range: 100
   bulletImpactPrefab: {fileID: 100002, guid: 20b31fcfaed0cb842a56fbbe2419428f, type: 3}
   impactForce: 20
+  damageDealt: 1
 --- !u!114 &1863745680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,6 +607,18 @@ MonoBehaviour:
   grenadePrefab: {fileID: 100010, guid: e889f3b0fa9bf2e4b87b0bd49cd501f8, type: 3}
   MyCamera: {fileID: 4490257326247362}
   throwForce: 10
+--- !u!114 &352121746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93148c1cd5c87846a41ad44551a64c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1963958859065967600
 GameObject:
   m_ObjectHideFlags: 0

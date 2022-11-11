@@ -21,7 +21,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hitInfo, interactionDistance, interactableLayers))
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.forward, out hitInfo, interactionDistance, interactableLayers))
         {
             Interactable interactable = hitInfo.collider.gameObject.GetComponent<Interactable>();
             if (interactable != null)

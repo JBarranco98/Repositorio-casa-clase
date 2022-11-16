@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3540f0c8c6ca26e4e8054de6ee6db1dc, type: 3}
+  m_Name: Sylvanas
+  m_EditorClassIdentifier: 
+  cardName: Sylvanas Windrunner
+  cardDescription: 'Deathrate: Take control of random enemy minion'
+  cardAttack: 5
+  cardDefense: 5
+  cardCost: 6
+  cardArt: {fileID: 21300000, guid: d303a31c05ef2c04dae784df8aa817a9, type: 3}
